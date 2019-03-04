@@ -1,3 +1,54 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+/* percentage works relative to the parent element i.e. the .content div */
+img {
+    width: 100%;
+}
+
+/* negative values in margin work in an opposite manner to positive values (they bring elements closer) */
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column as well as within each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
