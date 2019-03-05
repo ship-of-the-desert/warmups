@@ -16,3 +16,8 @@
 #### Step 2:
 
 ![](assets/part_2.png)
+
+---
+# Grid Practice
+
+When you're done with part 1 try to go through as many levels of [Grid Garden](https://cssgridgarden.com/) as you can manage
