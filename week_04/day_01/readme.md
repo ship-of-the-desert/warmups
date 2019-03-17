@@ -33,3 +33,5 @@ Go to the store and buy some more, 99 bottles of coke on the wall.
 
 #### Bonus:
 - Be able to count between a range of numbers (ie, 20 to 10).
+- Make the song verses' text color alternate between blue and red.
+- Make the last line of the song green.
