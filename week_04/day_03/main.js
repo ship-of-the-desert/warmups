@@ -11,3 +11,27 @@
 
 // 3
 // Create a robot counter that increments every time we ask the robot to perform a task (such as; print the name, reset)
+
+class Robot {
+    constructor() {
+        this.roboName = `Robot${Math.floor(Math.random() * 1000)}`;
+        this.counter = 0;
+    }
+    reset() {
+        this.roboName = `Robot${Math.floor(Math.random() * 1000)}`;
+        this.counter++
+    }
+    get name() {
+        this.counter++;
+        return this.roboName;
+    }
+}
+
+let robot = new Robot()
+
+console.log(robot.counter);
+console.log(robot.name)
+console.log(robot.name);
+robot.reset()
+console.log(robot.name);
+console.log(robot.counter);
