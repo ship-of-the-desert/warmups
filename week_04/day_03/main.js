@@ -14,16 +14,16 @@
 
 class Robot {
     constructor() {
-        this.roboName = `Robot${Math.floor(Math.random() * 1000)}`;
+        this._name = `Robot${Math.floor(Math.random() * 1000)}`;
         this.counter = 0;
     }
     reset() {
-        this.roboName = `Robot${Math.floor(Math.random() * 1000)}`;
+        this._name = `Robot${Math.floor(Math.random() * 1000)}`;
         this.counter++
     }
     get name() {
         this.counter++;
-        return this.roboName;
+        return this._name;
     }
 }
 
