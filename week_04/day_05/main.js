@@ -1,4 +1,4 @@
-// Act I
+/* ACT I */
 
 var hamlets = [
     "Laurence Olivier, 1948",
@@ -9,32 +9,43 @@ var hamlets = [
     "Michael Almereyda, 2000"
 ];
 
-// Scene I
-// Use .forEach to print out "O! the venerable [Actor] starred as Hamlet in [Year]"
 console.log("Scene I ---------------------------");
+hamlets.forEach(function (hamlet) {
+    var splitHamlet = hamlet.split(", ");
+    console.log(`O! the venerable ${splitHamlet[0]} starred as Hamlet in ${splitHamlet[1]}`);
+});
 
-// Scene II
-//Programatically convert the hamlets array into an array of arrays where the
-//first element, name, is a string, and the second element, year, is an integer.
 console.log("Scene II ---------------------------");
+var hamletArrays = hamlets.map(function (hamlet) {
+    var splitHamlet = hamlet.split(", ");
+    splitHamlet[1] = parseInt(splitHamlet[1]);
+    return splitHamlet;
+});
+console.log(hamletArrays);
 
-// Scene III
-// Programatically convert the hamlets array of arrays into an array of objects
-// where the keys are name and year
 console.log("Scene III ---------------------------");
+var hamletObjects = hamlets.map(function (hamlet) {
+    var splitHamlet = hamlet.split(", ");
+    return {
+        name: splitHamlet[0],
+        year: splitHamlet[1],
+    };
+});
+console.log(hamletObjects);
 
-// Scene IV
-// Using the object of arrays from Scene III, programatically select all the Hamlets from the 1960's and assign them to an
-// array called swingin_hamlets
 console.log("Scene IV ---------------------------");
+var swingingHamlets = hamletObjects.filter(function (hamlet) {
+    return hamlet.year >= 1960 && hamlet.year < 1970;
+});
+console.log(swingingHamlets);
 
-// Scene V
-// // Using the object of arrays from Scene III, programatically select all the Hamlets from the 2000's and assign them to an
-// array called future_hamlets
 console.log("Scene V ---------------------------");
+var futureHamlets = hamletObjects.filter(function (hamlet) {
+    return hamlet.year >= 2000
+});
+console.log(futureHamlets);
 
-// Act II
-
+/* ACT II */
 var quotesArray = [
     ["To be, or not to be: that is the question", "Hamlet-(Act III,Scene I)."],
     ["A little more than kin, and less than kind", "Hamlet-(Act I,Scene II)."],
@@ -57,6 +68,18 @@ var quotesArray = [
     ["When sorrows come, they come not single spies, but in battalions", "Hamlet-(Act IV,Scene V)."]
 ];
 
-// Scene I
-// Convert the following quotes array into an array of objects. Each object
-// should have the keys quote, play, act and scene
+// there are many ways to do this one, here is a solution:
+console.log("Act II ---------------------------")
+var quoteObjArr = quotesArray.map(function (quote) {
+    var quoteObj = {};
+
+    quoteObj.quote = quote[0];
+    quoteObj.play = quote[1].split('-', 1)[0];
+    var actScene = quote[1].split('Act ')
+    actScene = actScene[1].split(',');
+    quoteObj.act = actScene[0];
+    quoteObj.scene = actScene[1].split('Scene ')[1].split(')')[0];
+
+    return quoteObj;
+});
+console.log(quoteObjArr);
