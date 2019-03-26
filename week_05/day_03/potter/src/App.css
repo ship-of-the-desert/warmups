@@ -1,0 +1,35 @@
+body {
+text-align: center
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.card {
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 1px 1px 1px black;
+  width: calc(100%/4);
+  float: left;
+}
+
+.clear{
+  clear: both;
+}
+
+
+@media (max-width:900px){
+.card {
+  padding: 3px;
+}
+}
+
+@media (max-width:850px){
+  img {
+  width: 100px;
+  height: 100px;
+}
+}
