@@ -7,6 +7,8 @@ Create a react app that displays all the student names, where the following happ
 - if you click on a name it turns red, and the message `I am the mighty _student name here_! How dare you touch me!!?` is displayed under it
 - if you right click on a name it turns purple, and the message `Stop. Poking. Around!!` is displayed under it
 - if you double click a name it turns green, and the message `STOP IT!!!`  is displayed under it
+        
+    - the message `STOP IT!!!` disappears after a second and the name goes back to black
 
 ```js
  const students = [
