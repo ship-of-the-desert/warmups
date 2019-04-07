@@ -1,15 +1,24 @@
-# Sticker Shop
+# Anagram Detector
 
-![](https://ae01.alicdn.com/kf/HTB1lr7RXwZC2uNjSZFnq6yxZpXaD/40-Pieces-set-SQL-Programming-Geek-Hacker-Bitcoin-developer-Language-APP-Logo-Funny-Laptop-Phone-waterproof.jpg_640x640.jpg)
+Write a program that, given a word and a list of possible anagrams, selects the anagrams of the given word.
 
-We want to build a STICKERS SHOP to sell our awesome stickers, it needs to greet the user then ask how many stickers and wait for an input. Each sticker will cost 15SAR It should print out a message that includes the quantity that the user typed in, and the total cost with tax 0.05.
+In other words, given:
+```ruby
+word = "listen"
+arr = ["enlists", "google", "inlets", "banana", "istlen"]
+```
+The program should return `inlets` and `istlen`.
 
-We also want to offer discounts for ordering a lot of stickers at once!! 
+Extra Steps: 
+- Try to do this in different ways
 
-So if a user orders 50 or more stickers, they should only be charged 10SAR per STICKER. And if a user orders 100 or more stickers, they should only be charged 5SAR per STICKER.
+- Create a programs that returns the index of the word instead of the word itself
 
-## Features Checklist
-- Display welcome message
-- Ask for quantity
-- Calculate total with tax
-- Discount for large orders
+## Suggestions
+
+- Use Ruby built-in functions to your advantage
+- `split()`
+- `sort`
+- `join`
+- `chars`
+- `each_char`
