@@ -13,7 +13,7 @@ def check_word(word)
     p "You Win"
     win = true
   else
-    p "#{result}/#{word.length} correct"
+    p "#{result}/#{random.length} correct"
   end
   return win
 end
