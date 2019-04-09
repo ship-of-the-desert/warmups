@@ -1,4 +1,4 @@
-## 1st Solution
+## Solution
 
 $words = ["SCORPION", "FLOGGING", "CROPPERS", "MIGRAINE", "FOOTNOTE", "REFINERY", "VAULTING", "CONTINUE", "PROTECTS", "DESCENTS"]
 
