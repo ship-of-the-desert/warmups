@@ -2,8 +2,7 @@
 
 $words = ["SCORPION", "FLOGGING", "CROPPERS", "MIGRAINE", "FOOTNOTE", "REFINERY", "VAULTING", "CONTINUE", "PROTECTS", "DESCENTS"]
 
-def check_word(word)
-  random = $word[Random.rand(0...$words.length)]
+def check_word(word, random)
   win = false
   result = 0
   word.chars.length.times do |i|
@@ -19,12 +18,13 @@ def check_word(word)
 end
 
 def check_win()
+  random = $words[Random.rand(0...$words.length)]
   puts $words
   tries = 4
   while (tries > 0)
     p "Guess (#{tries} left)? "
     word = gets.chomp!.upcase!
-    break if check_word(word)
+    break if check_word(word, random)
     tries -= 1
   end
   p "Access Denied" if tries == 0
@@ -32,7 +32,7 @@ end
 
 check_win()
 
-### Team One
+## Team One
 
 words = ["SCORPION", "FLOGGING", "CROPPERS", "MIGRAINE", "FOOTNOTE", "REFINERY", "VAULTING", "CONTINUE", "PROTECTS",
          "DESCENTS"]
