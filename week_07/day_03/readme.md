@@ -32,7 +32,7 @@ migraine
 "0/8 correct"
 "Guess (3 left)?"
 protects
-"2/8 correct"
+"3/8 correct"
 "Guess (2 left)?" 
 croppers
 "8/8 correct"
