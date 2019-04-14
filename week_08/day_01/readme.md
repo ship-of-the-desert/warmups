@@ -22,7 +22,7 @@ The Romans wrote numbers using letters - I, V, X, L, C, D, M. (notice these lett
 
 ## Your Job
 
-Write a program that will convert Arabic numerals to Roman numerals.
+Write a program that will convert modern numerals to Roman numerals.
 
 There is no need to be able to convert numbers larger than about 3000. (The Romans themselves didn't tend to go any higher)
 
