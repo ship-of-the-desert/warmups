@@ -1,6 +1,6 @@
 # More Rails
 
-Yesterday we created a movie app that had a move and actor model.
+Yesterday we created a movie app that had a movie and actor model.
 Let's continue on yesterday's lesson!
 
 - Create a new `Director` model that has the following columns:
