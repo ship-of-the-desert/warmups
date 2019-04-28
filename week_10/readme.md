@@ -14,7 +14,7 @@ We'll stick with _**one**_ way to create objects in JavaScript called _object li
 
 **4.** Add a method to your penguin called `chirp` that prints to the console: `"CHIRP CHIRP! Is this what penguins sound like?"` (**Note:** Again, don't modify your previous code! Do this step by writing a new line of code.)
 
-**5.** Add another method to your penguin called `sayHello` that prints to the console the same message from step 20 above. But this time, be sure to use the mystical, magical, all-powerful `this` keyword to access your penguin's name, so that way the `sayHello` method could potentially work for _any_ penguin that has a name!
+**5.** Add another method to your penguin called `sayHello` that prints to the console the same message from step 2 above. But this time, be sure to use the mystical, magical, all-powerful `this` keyword to access your penguin's name, so that way the `sayHello` method could potentially work for _any_ penguin that has a name!
 
 **6.** Next, call your penguin's `sayHello()` method and make sure that it works! (**Hint:** if you need an example of what it looks like when you call a method of an object, look at `console.log()` -- that's how you call the `log()` method of the `console` object!)
 
