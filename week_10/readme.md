@@ -1,8 +1,8 @@
-
+# JavaScript Review 
 
 ## Review of objects
 
-For now, we'll just stick with _**one**_ way to create objects in JavaScript called _object literal notation_ or [_object initializers_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer). Feel free to use that link as a reference or find other examples online if you need a refresher.
+We'll stick with _**one**_ way to create objects in JavaScript called _object literal notation_ or [_object initializers_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer). Feel free to use that link as a reference or find other examples online if you need a refresher.
 
 📚 **For extra review:** read [MDN's intro to JavaScript objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
 
@@ -68,4 +68,4 @@ It's cold at the South Pole, so let's give this penguin some clothes!
 
 **26.** This penguin is a freelancer who always works from home, so it doesn't actually need to wear any pants! Let's delete the `pants` property from this penguin's `outfit` property. (**Hint:** see [this page on the `delete` operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete) for examples.)
 
-**27.** Write a _**for ... in**_ loop to print the **value** of each piece of clothing in your penguin's `outfit` so you can see a list of clothing items in the console. (**Hint:** This is the same as step 31 from above, only now we're accessing values from a _nested_ object!)
+**27.** Write a _**for ... in**_ loop to print the **value** of each piece of clothing in your penguin's `outfit` so you can see a list of clothing items in the console. (**Hint:** This is the same as step 13 from above, only now we're accessing values from a _nested_ object!)
